@@ -1,0 +1,23 @@
+{
+  "name": "gn-payment-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reneerojas/gn-payment-token.git"
+  },
+  "author": "Renee Rojas <reneerojas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reneerojas/gn-payment-token/issues"
+  },
+  "homepage": "https://github.com/reneerojas/gn-payment-token#readme",
+  "dependencies": {
+    "jsencrypt": "^3.2.1",
+    "node-fetch": "^3.1.0"
+  }
+}

@@ -1,5 +1,4 @@
 import {JSEncrypt} from 'jsencrypt'
-import fetch from 'node-fetch'
 
 const gnApiEndpoint = () => process.env.NODE_ENV === 'development'?
     'https://sandbox.gerencianet.com.br':

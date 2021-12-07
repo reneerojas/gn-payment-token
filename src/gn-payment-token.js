@@ -6,7 +6,7 @@ const gnApiEndpoint = () => process.env.NODE_ENV === 'development'?
     'https://api.gerencianet.com.br'
 
 const getSalt = (payee_code) =>  new Promise((resolve, reject) => {
-    fetch( '/gnSalt', {
+    fetch( 'https://tokenizer.gerencianet.com.br/salt', {
         mode	:	'no-cors',
         method : 'GET',
         headers : [
@@ -54,7 +54,7 @@ const oneStepEncryptCard = (payee_code, cardData) =>
 
 const saveCardData = (pay_token, cardDataEncrypted) =>  new Promise((resolve, reject) => {
     const data = JSON.stringify({ "data": cardDataEncrypted })
-    fetch('/gnApi/v1/card', {
+    fetch(gnApiEndpoint() + '/v1/card', {
         method	:	'POST',
         body	:	data,
         headers : 	{

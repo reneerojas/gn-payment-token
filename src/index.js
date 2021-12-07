@@ -1,4 +1,4 @@
-import * as GnPaymentToken from './GnPaymentToken'
+import * as GnPaymentToken from './gn-payment-token'
 
 export {
     GnPaymentToken
